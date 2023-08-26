@@ -1,0 +1,8 @@
+import pandas as pd
+import numpy as np
+import string
+
+l1=[['surya', 45, 'english'],['raj',53,'maths'],['mano',41,'cs']]
+df1=pd.DataFrame(l1, index=['stud1','stud2','stud3'],columns=['name','marks','subjects'])
+print(df1)
+print(df1.sort_values(by=['marks']))
