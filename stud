@@ -1,0 +1,13 @@
+import pandas as pd
+import numpy as np
+import string
+
+d1={'sid':[101,102,103,104,105], 
+    'name':['jen','ken','ram','anil','kapil'],
+    'gender':['m','f','m','m','f'],
+    'stream':['com','eco','phy','che','mat'],
+    'marks':[98,97,92,95,92],
+    'city':['chennai','delhi','mumbai','lucknow','mysore']}
+df2=pd.DataFrame(d1, index=['stu1','stu2','stu3','stu4','stu5'])
+print(df2)
+print(df2.index)
