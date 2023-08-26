@@ -1,0 +1,7 @@
+import pandas as pd
+df=pd.DataFrame({'Name':['Virat Kohli', 'Ajinkya Rahane','Rohit sharma','Shikhar Dhawan','Hardik Pandya'],
+                 'Test':[3543,2578,2280,2158,1879],
+                 'ODI':[2845,2665,2580,1957,1856],
+                 'T20':[1925,1853,1522,1020,980]})
+print(df)
+print(df.loc[df['ODI']>2500,['Name']])
