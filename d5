@@ -1,0 +1,6 @@
+import pandas as pd
+import numpy as np
+import string
+
+df5=pd.read_csv("C:\\New folder\\Untitled spreadsheet.csv")
+print(df5)
