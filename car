@@ -1,0 +1,19 @@
+import pandas as pd
+import numpy as np
+import string
+
+e=['Tata','Hyundai','Honda','Suzuki']
+f=['Safari','c20','civic','alto']
+g=[2019,2021,2023,2020]
+h=[250000,160000,180000,400000]
+d1=pd.DataFrame({'Brand':e,'Model':f,'Year':g,'Price':h},index=[10,20,30,40])
+d1['Dealer']='Hanson Wheels'
+d1['Rating']=[1,2,3,4]
+d1.at[[20],['Dealer']]='Kent Cars'
+d1.loc[10,'Price']=100000
+d1.loc[:,'Rating'::]=1
+d1.loc[:,['Rating']]='A'
+d1.at[10,'Dealer']='Mace Race'
+d1.loc[:,'Engine']=['C24','M190','EXP10','C03']
+d1.at[:,'Engine Efficiency_%']=[75,80,85,90]
+print(d1)
