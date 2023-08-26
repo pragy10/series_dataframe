@@ -1,0 +1,12 @@
+import pandas as pd
+import numpy as np
+import string
+
+l2=[{'sid':101,'name':'jen','gender':'m','stream':'com','marks':98,'city':'chennai'},
+    {'sid':102,'name':'ken','gender':'f','stream':'eco','marks':97,'city':'delhi'},
+    {'sid':103,'name':'ram','gender':'m','stream':'phy','marks':92,'city':'mumbai'},
+    {'sid':104,'name':'anil','gender':'m','stream':'che','marks':95,'city':'lucknow'},
+    {'sid':105,'name':'kapil','gender':'f','stream':'mat','marks':92,'city':'mysore'},]
+df3=pd.DataFrame(l2, index=['stu1','stu2','stu3','stu4','stu5'])
+print(df3)
+print(df3.sort_values(by=['gender'], ascending=False))
